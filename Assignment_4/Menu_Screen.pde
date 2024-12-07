@@ -5,7 +5,7 @@ class Screen1 {
   }
   
   void display() {
-   background(0,0,155);
+   background(157,228,255);
    
    //Making the button to switch to the customization screen
    fill(255);
