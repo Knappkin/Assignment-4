@@ -3,8 +3,14 @@ Screen1 menu = new Screen1();
 Screen2 customPage = new Screen2();
 int screenNum = 1;
 
+
 void setup() {
+  //Canas size
   size(400,400);
+  
+  //Making it so there is no stroke across the program and setting rectMode
+  noStroke();
+  rectMode(CENTER);
 }
 
 
@@ -16,5 +22,18 @@ void draw() {
   
   if (screenNum == 2) {
     customPage.display(); 
+  }
+}
+
+void mousePressed() {
+  
+  //Code for if the button is clicked on the menu screen
+  if (screenNum == 1 && mouseX < width/2 + 38 && mouseX > width/2 -38 && mouseY > 300-38 && mouseY < 300+38) {
+    screenNum = 2;
+  }
+
+ //If its clicked on the customization screen
+  else if (screenNum == 2) {
+    screenNum = 1;
   }
 }
