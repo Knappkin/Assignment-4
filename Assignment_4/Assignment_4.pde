@@ -10,14 +10,14 @@ void setup() {
   size(400,400);
   
   //Initializing images
-  bodies = loadImage("BODIES.png");
+  bodies = loadImage("BODIES5.png");
   caps[0] = loadImage("Cap1.png");
   caps[1] = loadImage("cap2.png");
   caps[2] = loadImage("Cap3.png");
   caps[3] = loadImage("Cap4.png");
-  caps[4] = loadImage("Cap5.png");
-  caps[5] = loadImage("Cap6.png");
-  caps[6] = loadImage("Cap7.png");
+  //caps[4] = loadImage("Cap5.png");
+  caps[4] = loadImage("Cap6.png");
+  caps[5] = loadImage("Cap7.png");
   
   //Making it so there is no stroke across the program and setting rectMode
   noStroke();
