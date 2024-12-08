@@ -4,6 +4,7 @@ Screen2 customPage = new Screen2();
 int screenNum = 1;
 PImage caps[] = new PImage[7];
 PImage bodies;
+PImage navButton;
 
 void setup() {
   //Canas size
@@ -15,10 +16,10 @@ void setup() {
   caps[1] = loadImage("cap2.png");
   caps[2] = loadImage("Cap3.png");
   caps[3] = loadImage("Cap4.png");
-  //caps[4] = loadImage("Cap5.png");
   caps[4] = loadImage("Cap6.png");
   caps[5] = loadImage("Cap7.png");
   
+  navButton = loadImage("button.png");
   //Making it so there is no stroke across the program and setting rectMode
   noStroke();
   rectMode(CENTER);
@@ -46,11 +47,22 @@ void mousePressed() {
 
  //If its clicked on the customization screen
   else if (screenNum == 2) {
-    if (mouseX < width/2){
+    
+    //b1 lower cap shape
+    if (mouseX > 72 && mouseX < 88 && mouseY > 102 && mouseY < 118){
       customPage.lowerCType();
     }
-    if (mouseX >width/2) {
+    //b2 raise cap shape
+    if (mouseX > 312 && mouseX < 328 && mouseY > 102 && mouseY < 118) {
       customPage.raiseCType();
+    }
+    //b3 lower cap colour
+    if (mouseX > 72 && mouseX < 88 && mouseY > 137 && mouseY <153) {
+      customPage.lowerCColour();
+    }
+     //b4 raise cap colour
+    if (mouseX > 312 && mouseX < 328 && mouseY > 137 && mouseY <153) {
+      customPage.raiseCColour();
     }
   }
 }

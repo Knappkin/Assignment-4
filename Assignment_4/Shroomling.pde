@@ -4,12 +4,14 @@ class Shroomling{
   int whichCap;
   int capRow;
   int capY;
+  int capColour;
+  
   Shroomling(int bodNum, int capNum) {
      bodOffset = bodNum * 128;
      whichCap = capNum;
      capRow = int(random(0,1.99))*128;
      println(capRow);
-     capOffset = int(random(0,3.99)) *128;
+     capColour = int(random(0,3.99));
      println(capOffset);
      capY = 0;
     
@@ -17,6 +19,8 @@ class Shroomling{
   
   void display() {
     
+     capOffset = capColour * 128;
+     
     if (whichCap == 3 || whichCap == 2){
        capY = 24;
      }
