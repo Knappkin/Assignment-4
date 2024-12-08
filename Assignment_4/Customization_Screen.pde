@@ -7,7 +7,7 @@ class Screen2 {
  }
  
  void display() {
-   background(0);
+   background(220,255,196);
    shroom.display();
  }
  void lowerCType() {
