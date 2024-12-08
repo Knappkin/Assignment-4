@@ -58,7 +58,7 @@ NavButton b8 = new NavButton(320,300);
  }
  
 void raiseCType() {
-  if (shroom.whichCap < 6){
+  if (shroom.whichCap < 5){
     shroom.whichCap += 1;
    }
 }
@@ -76,4 +76,29 @@ void raiseCColour() {
     shroom.capColour += 1;
   }
 }
+
+void lowerCPat() {
+  if(shroom.capPattern == 1) {
+    shroom.capPattern = 0;
+}
+}
+
+void raiseCPat() {
+  if(shroom.capPattern == 0) {
+    shroom.capPattern = 1;
+  }
+}
+
+void lowerB() {
+  if (shroom.whichBod > 0) {
+    shroom.whichBod -=1;
+  }
+}
+
+void raiseB() {
+  if (shroom.whichBod < 6) {
+    shroom.whichBod += 1;
+  }
+}
+  
 }

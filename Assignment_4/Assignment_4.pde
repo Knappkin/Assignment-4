@@ -64,5 +64,26 @@ void mousePressed() {
     if (mouseX > 312 && mouseX < 328 && mouseY > 137 && mouseY <153) {
       customPage.raiseCColour();
     }
+    
+    //b5 lower cap pattern
+    if (mouseX > 72 && mouseX < 88 && mouseY >172 && mouseY < 188) {
+      customPage.lowerCPat();
+      println("clicked!");
   }
+  //b6 raise cap pattern
+    if (mouseX > 312 && mouseX < 328 && mouseY >172 && mouseY < 188) {
+      customPage.raiseCPat();
+      println("clacked!");
+  }
+  
+  //b7 lower body shape
+  if  (mouseX > 72 && mouseX < 88 && mouseY > 292 && mouseY < 308) {
+    customPage.lowerB();
+  }
+  
+  //b8 raise body shape
+  if (mouseX > 312 && mouseX < 328 && mouseY > 292 && mouseY < 308) {
+    customPage.raiseB();
+  }
+}
 }
