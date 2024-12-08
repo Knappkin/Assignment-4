@@ -1,7 +1,13 @@
 //ASSIGNMENT 4
+
+//Creating objects for each page
 Screen1 menu = new Screen1();
 Screen2 customPage = new Screen2();
+
+//Determmines which screen to show
 int screenNum = 1;
+
+//Images for the mushroomm caps, bodies, and the buttons for changing options in customization
 PImage caps[] = new PImage[7];
 PImage bodies;
 PImage navButton;
@@ -20,6 +26,7 @@ void setup() {
   caps[5] = loadImage("Cap7.png");
   
   navButton = loadImage("button.png");
+  
   //Making it so there is no stroke across the program and setting rectMode
   noStroke();
   rectMode(CENTER);
@@ -28,10 +35,11 @@ void setup() {
 
 void draw() {
   
+  //display the main menu
   if (screenNum == 1) {
     menu.display();
   }
-  
+  //display the customization menu
   if (screenNum == 2) {
     customPage.display(); 
   }

@@ -27,17 +27,20 @@ NavButton b7 = new NavButton(80, 300);
 NavButton b8 = new NavButton(320,300);
 
  
- 
+ //Creating the mushroom guy, sends values for which body and cap to originally display
  Screen2() {
    shroom = new Shroomling(int(random(0,6)), int(random(0,5)));
  }
  
  void display() {
+   //light green background
    background(220,255,196);
    
    //Button to finish
    fill(0);
    rect(width/2,350,40,20);
+   
+   //Display the mushroom and the buttons
    shroom.display();
    displayButtons();
  }
@@ -53,7 +56,7 @@ NavButton b8 = new NavButton(320,300);
    b8.display();
  }
  
- 
+ //Functions to change between options for cap colour, shape, pattern and body shape
  void lowerCType() {
    if(shroom.whichCap > 0){
      
