@@ -46,6 +46,11 @@ void mousePressed() {
 
  //If its clicked on the customization screen
   else if (screenNum == 2) {
-    screenNum = 1;
+    if (mouseX < width/2){
+      customPage.lowerCType();
+    }
+    if(mouseX > width/2){
+      customPage.raiseCType();
+    }
   }
 }

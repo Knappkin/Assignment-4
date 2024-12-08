@@ -12,13 +12,15 @@ class Shroomling{
      capOffset = int(random(0,3.99)) *128;
      println(capOffset);
      capY = 0;
-     if (whichCap == 3 || whichCap == 2){
-       capY = 24;
-     }
+    
   }
   
   void display() {
     
+    if (whichCap == 3 || whichCap == 2){
+       capY = 24;
+     }
+     
 
     //Display body
    copy(bodies,bodOffset,0,128, 128, width/2-96,height/2,192,192);
@@ -28,4 +30,5 @@ class Shroomling{
    
   }
   
+ 
 }

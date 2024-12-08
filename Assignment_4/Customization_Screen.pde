@@ -10,4 +10,15 @@ class Screen2 {
    background(0);
    shroom.display();
  }
+ void lowerCType() {
+   if(shroom.whichCap > 0){
+     
+    shroom.whichCap -= 1;
+  }
+ }
+ 
+ void raiseCType() {
+   if (shroom.whichCap < 3){
+    shroom.whichCap += 1;
+   }
 }
