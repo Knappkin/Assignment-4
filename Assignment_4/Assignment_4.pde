@@ -48,6 +48,12 @@ void mousePressed() {
  //If its clicked on the customization screen
   else if (screenNum == 2) {
     
+    //Finish button
+    if (mouseX > width/2-20 && mouseX <width/2 +20 && mouseY > 340 && mouseY < 360) {
+      screenNum = 1;
+    }
+    
+    /////// OPTION CHANGE BUTTONS ////////
     //b1 lower cap shape
     if (mouseX > 72 && mouseX < 88 && mouseY > 102 && mouseY < 118){
       customPage.lowerCType();

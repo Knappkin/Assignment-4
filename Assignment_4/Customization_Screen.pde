@@ -34,6 +34,10 @@ NavButton b8 = new NavButton(320,300);
  
  void display() {
    background(220,255,196);
+   
+   //Button to finish
+   fill(0);
+   rect(width/2,350,40,20);
    shroom.display();
    displayButtons();
  }
