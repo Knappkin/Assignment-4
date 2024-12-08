@@ -49,7 +49,7 @@ void mousePressed() {
     if (mouseX < width/2){
       customPage.lowerCType();
     }
-    if(mouseX > width/2){
+    if (mouseX >width/2) {
       customPage.raiseCType();
     }
   }

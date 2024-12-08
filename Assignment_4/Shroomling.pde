@@ -20,6 +20,9 @@ class Shroomling{
     if (whichCap == 3 || whichCap == 2){
        capY = 24;
      }
+    else {
+      capY = 0;
+    }
      
 
     //Display body
